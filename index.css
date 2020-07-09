@@ -6,7 +6,7 @@
 * {
 	box-sizing: border-box;
 	max-width: 100%;
-	border: 2px solid grey;
+	/* border: 2px solid grey; */
 }
 
 html, body, div, span, applet, object, iframe,
@@ -126,7 +126,7 @@ nav div a {
 
 .hero-button {
 	padding: 1% 4%;
-	background-color: #EFD6AC;
+	background-color: #273C2c;
 }
 
 .hero-button a {
@@ -140,9 +140,33 @@ nav div a {
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .projects div {
 	display: flex;
 	width: 30%;
+	justify-content: center;
+	padding: 2% 1%;
+	flex-direction: column;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Grenze Gotisch', cursive;
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+.footer {
+	display: flex;
+	height: 20vh;
+	background-color: #EFD6AC;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-button {
+	display: flex;
+	height: 40%;
 }
