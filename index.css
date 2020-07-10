@@ -164,9 +164,14 @@ h3 {
 	background-color: #EFD6AC;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
 .footer-button {
 	display: flex;
 	height: 40%;
+}
+
+.footer a {
+	margin-top: 2%;
 }
