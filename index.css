@@ -175,13 +175,18 @@ h3 {
 }
 
 .footer-button {
-	display: flex;
-	height: 30%;
-	align-items: center;
+	width: 200px;
+	height: 60px;
+	padding: 2% 0% 2%;
+	text-decoration: none;
+	color: white;
+	background-color: teal;
+	text-align: center;
+	font-size: 1.4rem;
 }
 
 .footer a {
-	margin-top: 2%;
+	/* display: flex; */
 	
 }
 
