@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+	box-sizing: border-box;
+	max-width: 100%;
+	border: 2px solid grey;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Above is the reset, below is my code */
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+h1,h2{
+	font-family: 'Grenze Gotisch', cursive;
+	font-weight: 600;
+	font-size: 5rem;
+	display: flex;
+}
+
+nav {
+	display: flex;
+	width: 45%;
+	align-items: flex-end;
+}
+
+nav div {
+	display: flex;
+	width: 25%;
+	height: 70px;
+	color: white;
+	/* border-radius: 20%; */
+	text-align: center;
+	align-items: center;
+}
+
+.nav-home {
+	background-color: #011627;
+}
+
+.nav-about {
+	background-color: #FF3366;
+}
+
+.nav-contact {
+	background-color: #2EC4b6;
+}
+
+.nav-projects {
+	background-color: #FFC9B5;
+}
+
+nav div a {
+	width: 100%;
+	height: 100%;
+	padding: 12% 0;
+	font-family: 'Grenze Gotisch', cursive;
+	font-size: 1.6rem;
+	color: white;
+	text-decoration: none;
+}
+
+.container {
+	width: 80%;
+	margin: 4vh auto;
+}
+
+.hero-img {
+	background-image: url('assets/header_img.jpg');
+	width: 100%;
+	height: 60vh;
+	background-size: cover;
+	background-position: 0 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* .hero-button {
+	
+} */
+
+.hero-img a {
+	padding: 10px 4%;
+	background-color: #273C2c;
+	min-height: 40px;
+	color: white;
+	text-decoration: none;
+	font-family: 'Grenze Gotisch', cursive;
+	font-size: 1.6rem;
+	width: 250px;
+	/* height: 100%;
+	align-items: stretch; */
+}
+
+.projects {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.projects div {
+	display: flex;
+	width: 30%;
+	justify-content: center;
+	padding: 2% 1%;
+	flex-direction: column;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Grenze Gotisch', cursive;
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+.footer {
+	display: flex;
+	height: 20vh;
+	background-color: #EFD6AC;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footer-button {
+	width: 200px;
+	height: 60px;
+	padding: 2% 0% 2%;
+	text-decoration: none;
+	color: white;
+	background-color: teal;
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+.footer a {
+	/* display: flex; */
+	
+}
+
+@media(max-width: 800px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.container {
+		width: 90%;
+	}
+
+	nav div {
+		width: 50%;
+	}
+
+	.projects div {
+		width: 45%;
+	}
+
+	.hero-img {
+		height: 40vh;
+	}
+
+	.hero-img a {
+		height: 70px;
+		width: 200px;
+		padding-top: 20px;
+	}
+}
+
+@media(max-width: 500px) {
+	h1, h2 {
+		font-size: 3rem;
+	}
+
+	nav div a {
+		font-size: 1.2rem;
+		padding-top: 15px;
+	}
+}
